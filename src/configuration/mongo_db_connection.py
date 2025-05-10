@@ -47,7 +47,6 @@ class MongoDBClient:
             # Check if a MongoDB client connection has already been established; if not, create a new one
             if MongoDBClient.client is None:
                 mongo_db_url = MONGODB_URL_KEY  # Retrieve MongoDB URL from environment variables
-                print(mongo_db_url)
                 if mongo_db_url is None:
                     raise Exception(f"Environment variable '{MONGODB_URL_KEY}' is not set.")
                 

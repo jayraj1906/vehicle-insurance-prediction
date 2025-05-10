@@ -19,4 +19,5 @@ uvicorn
 jinja2
 imblearn
 loguru
-##-e .
+python-dotenv
+-e .
